@@ -1,22 +1,10 @@
-$(".theTarget").skipper({
+$(function() {
 
-	transition : 'fade',
+  $('#back a').on('click',function(){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+      return false;
+  });
 
-	speed : 1000,
-
-	easing : 'easeOutQuart',
-
-	navtype : 'block',
-
-	childrenElementType : 'div',
-
-	arrows : true,
-
-	autoPlay : false,
-
-	autoPlayDuration : 5000,
-
-	keyboardOnAlways : true,
-
-	hidePrevious : false,
 });
